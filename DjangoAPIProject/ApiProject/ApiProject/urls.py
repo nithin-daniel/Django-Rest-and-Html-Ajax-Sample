@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import url
+# from django.conf.urls import url
 from ApiApplication import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url("book/",views.BookApiView.as_view())
+    path("book/",views.BookApiView.as_view())
 ]
